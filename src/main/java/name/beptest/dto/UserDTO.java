@@ -17,8 +17,6 @@ public class UserDTO {
 	@Column
 	private String name;
 	@Column
-	private String nickname;
-	@Column
 	private String email;
 	@Column(name = "USER_ROLE")
 	private String userRole;

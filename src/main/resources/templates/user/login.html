@@ -2,23 +2,29 @@
 <head>
 <meta charset="UTF-8">
 <title>BEP</title>
+<link rel="stylesheet" href="/css/index.css"/>
+<script src="/lib/js/jquery-3.6.1.min.js"></script>
+<script src="/js/user/login.js"></script>
 </head>
-<body>
+<body onload="loginCtrl.init();">
 <form action="login" method="post">
 <table class="standard_tbl">
 	<tr>
 		<td colspan="2">로그인</td>
 	</tr>
 	<tr>
-		<td>ID</td>
+		<td>아이디</td>
 		<td><input type="text" name="id" id="id" class="standard_text"/></td>
 	</tr>
 	<tr>
-		<td>Password</td>
+		<td>비밀번호</td>
 		<td><input type="password" name="password" id="password" class="standard_text"/></td>
 	</tr>
 	<tr>
-		<td colspan="2"><input type="submit" value="로그인"/></td>
+		<td colspan="2">
+			<input type="submit" class="standard_button" value="로그인"/>
+			<input type="button" class="standard_button" value="회원가입" onclick="loginCtrl.moveSignUp();"/>
+		</td>
 	</tr>
 </table>
 </form>

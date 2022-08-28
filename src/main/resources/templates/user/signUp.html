@@ -1,0 +1,38 @@
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>BEP</title>
+<link rel="stylesheet" href="/css/index.css"/>
+<script src="/lib/js/jquery-3.6.1.min.js"></script>
+<script src="/js/user/signUp.js"></script>
+</head>
+<body>
+<form action="signUp" method="post">
+<table class="standard_tbl">
+	<tr>
+		<td>아이디</td>
+		<td><input type="text" name="id" id="id" class="standard_text"/></td>
+	</tr>
+	<tr>
+		<td>비밀번호</td>
+		<td><input type="password" name="password" id="password" class="standard_text"/></td>
+	</tr>
+	<tr>
+		<td>비밀번호 확인</td>
+		<td><input type="password" name="rePassword" id="rePassword" class="standard_text"/></td>
+	</tr>
+	<tr>
+		<td>이름</td>
+		<td><input type="text" name="name" id="name" class="standard_text"/></td>
+	</tr>
+	<tr>
+		<td>이메일</td>
+		<td><input type="text" name="email" id="email" class="standard_text"/></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="submit" class="standard_button" value="회원가입"/></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
