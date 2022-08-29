@@ -25,6 +25,7 @@ public class UserController {
 	
 	@PostMapping("/signUp")
 	public String signUp(@ModelAttribute UserDTO userDto, Model model) {
+		System.out.println(userDto);
 		return null;
 	}
 }
