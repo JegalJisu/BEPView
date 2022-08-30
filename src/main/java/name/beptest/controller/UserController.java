@@ -35,7 +35,10 @@ public class UserController {
 		userDto.setUserRole(Constrant.USER_ROLE_USER);
 		userDto.setRegDate(Utils.strDate());
 		userDto.setChgDate(Utils.strDate());
+		userService.addUser(userDto);
 		System.out.println(userDto);
+		
+		userService.allUser();
 		return null;
 	}
 }
