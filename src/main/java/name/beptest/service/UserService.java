@@ -8,4 +8,6 @@ public interface UserService {
 
 	void allUser();
 
+	UserDTO loginUser(UserDTO userDto);
+
 }

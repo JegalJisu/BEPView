@@ -14,4 +14,8 @@ public class Utils {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
 		return sdf.format(date);
 	}
+
+	public static boolean isNull(Object object) {
+		return object == null;
+	}
 }

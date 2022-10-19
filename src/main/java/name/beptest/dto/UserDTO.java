@@ -7,8 +7,8 @@ import javax.persistence.Table;
 
 import lombok.Data;
 
-@Entity
 @Data
+@Entity(name = "USER_TBL")
 @Table(name = "USER_TBL")
 public class UserDTO {
 	@Id
@@ -28,4 +28,10 @@ public class UserDTO {
 	private String regDate;
 	@Column(name = "CHG_DATE")
 	private String chgDate;
+	
+	@Override
+	public String toString() {
+		return "UserDTO [idx=" + idx + ", id=" + id + ", password=" + password + ", name=" + name + ", email=" + email
+				+ ", userRole=" + userRole + ", regDate=" + regDate + ", chgDate=" + chgDate + "]";
+	}
 }

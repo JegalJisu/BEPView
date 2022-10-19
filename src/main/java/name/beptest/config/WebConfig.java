@@ -25,7 +25,7 @@ import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 public class WebConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/").setViewName("forward:/user/loginPage");
+		registry.addViewController("/").setViewName("forward:/user/login");
 		registry.setOrder(Ordered.HIGHEST_PRECEDENCE);
 		super.addViewControllers(registry);
 	}
